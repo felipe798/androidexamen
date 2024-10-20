@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ejercicio01Activity">
+
+
+    <!-- CardView verde que se mostrará u ocultará -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        app:cardBackgroundColor="@android:color/holo_green_light"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="16dp"
+        app:contentPaddingTop="300dp"
+        app:contentPaddingBottom="50dp"
+        app:contentPaddingLeft="16dp"
+        app:contentPaddingRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.cardview.widget.CardView>
+
+    <!-- Botón Mostrar -->
+    <Button
+        android:id="@+id/btnMostrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Mostrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnOcultar"
+        app:layout_constraintWidth_percent="0.5" />
+
+    <!-- Botón Ocultar -->
+    <Button
+        android:id="@+id/btnOcultar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ocultar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnMostrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
